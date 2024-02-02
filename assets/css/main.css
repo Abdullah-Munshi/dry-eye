@@ -293,6 +293,12 @@ a {
 }
 /* contact-area css end */
 
+/* testimonial-area css start */
+.testimonial-section {
+  padding-top: 55px;
+}
+/* testimonial-area css end */
+
 /* team-area css start */
 .team-members-wrapper {
   display: grid;
@@ -335,3 +341,15 @@ a {
   padding-top: 55px;
 }
 /* benefits-area css end */
+
+/* footer-area css start */
+.footer-area {
+  background-color: #277ff8;
+  padding-top: 55px;
+  padding-bottom: 51px;
+}
+.cta-g-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+/* footer-area css end */
