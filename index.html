@@ -29,7 +29,7 @@
     <header class="header-area">
       <div class="container">
         <div class="header-content flex items-center justify-between">
-          <a href="" class="logo inline-block"
+          <a href="#" class="logo inline-block" aria-label="brand logo"
             ><img src="assets/images/logosmall.png" alt=""
           /></a>
           <div class="contact">
@@ -154,11 +154,13 @@
                   class="w-full"
                   slot="second"
                   src="assets/images/face-1-before.jpg"
+                  alt="before"
                 />
                 <img
                   class="w-full"
                   slot="first"
                   src="assets/images/face-1-after.jpg"
+                  alt="after"
                 />
               </img-comparison-slider>
             </div>
@@ -377,14 +379,19 @@
               </div>
               <div class="terms-condition-wrap">
                 <p>
-                  <label><input type="checkbox" name="" id="" /></label>I agree
-                  to <a href="#">Terms & Conditions</a>
+                  <label for="termsCheck"
+                    ><input
+                      type="checkbox"
+                      name="termsCheck"
+                      id="termsCheck" /></label
+                  >I agree to <a href="#">Terms & Conditions</a>
                 </p>
               </div>
               <button class="box-btn" type="submit">Submit</button>
             </form>
             <div class="map">
               <iframe
+                title="Map Frame"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3469.5945721216603!2d-95.65173842446369!3d29.586397475157472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640e15242bfffff%3A0xd51dc27cc0b9b9b1!2s13440%20University%20Blvd%20%23130%2C%20Sugar%20Land%2C%20TX%2077479%2C%20USA!5e0!3m2!1sen!2sbd!4v1706889086533!5m2!1sen!2sbd"
                 width="600"
                 height="450"
@@ -436,7 +443,7 @@
                     <div class="reviwer-thumb">
                       <img src="assets/images/user.jpg" alt="" />
                     </div>
-                    <h5>Michel jhon <span class="block">CEO, TMAkal</span></h5>
+                    <p>Michel jhon <span class="block">CEO, TMAkal</span></p>
                   </div>
                 </div>
                 <div class="testimonial-item">
@@ -449,7 +456,7 @@
                     <div class="reviwer-thumb">
                       <img src="assets/images/user.jpg" alt="" />
                     </div>
-                    <h5>Michel jhon <span class="block">CEO, TMAkal</span></h5>
+                    <p>Michel jhon <span class="block">CEO, TMAkal</span></p>
                   </div>
                 </div>
               </div>
@@ -474,7 +481,7 @@
                 />
               </div>
               <div class="member-description">
-                <h5>Dr Ana kambl</h5>
+                <h3>Dr Ana kambl</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Nobis consectetur, nisi rerum harum, deserunt repudiandae
@@ -512,7 +519,7 @@
                 />
               </div>
               <div class="member-description">
-                <h5>Dr Ana kambl</h5>
+                <h3>Dr Ana kambl</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Nobis consectetur, nisi rerum harum, deserunt repudiandae
@@ -550,7 +557,7 @@
                 />
               </div>
               <div class="member-description">
-                <h5>Dr Ana kambl</h5>
+                <h3>Dr Ana kambl</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Nobis consectetur, nisi rerum harum, deserunt repudiandae
@@ -597,6 +604,7 @@
       />
       <a
         href="#"
+        aria-label="button for back to top"
         class="back-to-top absolute inline-flex items-center justify-center"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
@@ -615,7 +623,7 @@
       <div class="container relative z-1">
         <div class="footer-g-wrapper">
           <div class="lgo-part">
-            <a href="#" class="inline-block"
+            <a href="#" class="inline-block" aria-label="brand logo"
               ><img src="assets/images/logosmall.png" alt=""
             /></a>
             <p class="place">
