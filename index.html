@@ -71,8 +71,8 @@
             <div class="hero-content-lf">
               <h1 class="ttl">The Luxurious HYDRAFACIAL™</h1>
               <p>
-                Transform your complexion and achieve a youthful, <br />
-                fresh, and radiant appearance
+                Transform your complexion and achieve a youthful, fresh, and
+                radiant appearance
               </p>
               <div class="mention-price flex items-center">
                 <p class="for">For Only</p>
@@ -89,14 +89,17 @@
                   Book this week, and we will include a <br />
                   <span class="free-item">+ FREE LED Light Therapy</span>
                 </p>
-                <button class="book-short absolute">
+                <a
+                  href="#contactForm"
+                  class="book-short inline-flex items-center justify-center absolute"
+                >
                   <span class="pulse-bg w-full h-full"></span
                   ><span class="relative z-1"
                     >Click <br />
                     to <br />
                     Book</span
                   >
-                </button>
+                </a>
               </div>
             </div>
 
@@ -130,7 +133,7 @@
                   <li><img src="assets/images/expert-1.jpg" alt="" /></li>
                   <li><img src="assets/images/expert-1.jpg" alt="" /></li>
                 </ul>
-                <a href="#">Meet Our Experts</a>
+                <a href="#teamSection" class="cmn-link">Meet Our Experts</a>
               </div>
               <div class="book-short-wrap"></div>
             </div>
@@ -345,7 +348,7 @@
         </div>
       </section>
       <!-- ./about-treatment-area -->
-      <section class="contact-area">
+      <section class="contact-area" id="contactForm">
         <div class="container">
           <div class="contact-g-wrapper">
             <form action="" class="contact-form">
@@ -353,20 +356,24 @@
                 <h2>Booking Form</h2>
               </div>
               <div class="input-inside">
-                <label for="">First Name<span class="required">*</span></label>
-                <input type="text" />
+                <label for="firstName"
+                  >First Name<span class="required">*</span></label
+                >
+                <input type="text" id="firstName" />
               </div>
               <div class="input-inside">
-                <label for="">Last Name<span class="required">*</span></label>
-                <input type="text" />
+                <label for="lastName"
+                  >Last Name<span class="required">*</span></label
+                >
+                <input type="text" id="lastName" />
               </div>
               <div class="input-inside">
-                <label for="">Email<span class="required">*</span></label>
-                <input type="email" />
+                <label for="email">Email<span class="required">*</span></label>
+                <input type="email" id="email" />
               </div>
               <div class="input-inside">
-                <label for="">Phone<span class="required">*</span></label>
-                <input type="text" />
+                <label for="phone">Phone<span class="required">*</span></label>
+                <input type="text" id="phone" />
               </div>
               <div class="terms-condition-wrap">
                 <p>
@@ -451,7 +458,7 @@
         </div>
       </section>
 
-      <section class="team-area">
+      <section class="team-area" id="teamSection">
         <div class="container">
           <div class="section-title">
             <h2>Our Team</h2>
@@ -588,6 +595,23 @@
         alt=""
         class="layer two absolute"
       />
+      <a
+        href="#"
+        class="back-to-top absolute inline-flex items-center justify-center"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-arrow-up-circle-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill="#277ff8"
+            d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"
+          />
+        </svg>
+      </a>
       <div class="container relative z-1">
         <div class="footer-g-wrapper">
           <div class="lgo-part">
@@ -644,7 +668,7 @@
               <h2>Subscribe To get update</h2>
             </div>
             <div class="input-inside">
-              <input type="text" />
+              <input type="text" placeholder="Your Email..." />
               <button type="submit" class="box-btn border_white">
                 Subscribe
               </button>
@@ -654,6 +678,7 @@
       </div>
     </footer>
 
+    <!-- ALL Js Here  -->
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"

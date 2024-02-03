@@ -92,6 +92,9 @@ h5 {
   margin-right: 5px;
   transform: translateY(-1px);
 }
+.header-area .contact {
+  margin-top: 10px;
+}
 /* header css end */
 
 /* hero-area css start */
@@ -184,6 +187,8 @@ h5 {
   line-height: 1;
   right: 0;
   top: -21px;
+  text-decoration: none;
+  text-align: center;
 }
 .pulse-bg {
   animation: pulse 1.2s ease infinite;
@@ -208,8 +213,11 @@ h5 {
   margin-top: -103px;
   z-index: 1;
   position: relative;
+  box-shadow: 0px 5px 5px #ddd6;
 }
-
+.hero-btm-rg {
+  padding-left: 40px;
+}
 .experts-short-wrapper ul {
   display: flex;
   align-items: center;
@@ -229,6 +237,14 @@ h5 {
   width: 56px;
   height: 56px;
   display: block;
+}
+
+.cmn-link {
+  color: #000;
+  font-weight: 500;
+}
+.cmn-link:hover {
+  color: var(--primary);
 }
 /* hero-bottom-area css end */
 
@@ -254,6 +270,9 @@ h5 {
 }
 .treatment-steps li strong {
   display: inline-block;
+}
+.testimonial-area .layer {
+  width: 350px;
 }
 /* about-treatment-area css end */
 
@@ -524,6 +543,7 @@ input[type="checkbox"]:before {
 .subscribe .input-inside {
   display: grid;
   grid-template-columns: auto 130px;
+  margin: 0;
 }
 .footer-area .section-title h2 {
   color: #fff;
@@ -560,4 +580,200 @@ input[type="checkbox"]:before {
 .subscribe input:focus {
   border-color: transparent;
 }
+.back-to-top {
+  right: 65px;
+  top: 60px;
+  background-color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 5px;
+  z-index: 5;
+}
 /* footer-area css end */
+
+@media screen and (max-width: 1439px) {
+  .back-to-top {
+    right: 20px;
+    top: 20px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .eye {
+    width: 430px;
+  }
+  .case-g-wrapper,
+  .benefits-g-wrapper,
+  .team-members-wrapper {
+    grid-gap: 24px;
+  }
+  .hero-content-lf h1 {
+    font-size: 48px;
+  }
+  .hero-area {
+    height: 650px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .footer-g-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-area .layer {
+    display: none;
+  }
+  .testimonial-outer-wrapper {
+    display: block;
+  }
+  .testimonial-left {
+    width: 100%;
+    padding-right: 0;
+  }
+  .testimonial-right {
+    width: 100%;
+  }
+  .contact-g-wrapper,
+  .hero-content {
+    display: block;
+  }
+  .map {
+    margin-top: 30px;
+  }
+  .map iframe {
+    height: 250px;
+  }
+  .case-g-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero-area {
+    height: auto;
+    padding-top: 45px;
+    padding-bottom: 55px;
+  }
+  .eye {
+    width: 100%;
+  }
+  .hero-content-lf {
+    margin-bottom: 60px;
+  }
+  .hero-bottom-area {
+    flex-direction: column-reverse;
+    padding-top: 48px;
+  }
+  .left-eye-img img {
+    width: 100%;
+    padding: 24px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 5px #ddd6;
+  }
+  .benefits-g-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .hero-btm-rg {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .logo img {
+    width: 140px;
+  }
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .hero-content-lf h1 {
+    font-size: 36px;
+  }
+  .hero-content-lf p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .mention-price del {
+    font-size: 14px;
+  }
+  .discount-price {
+    font-size: 42px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .book-short {
+    width: 65px;
+    height: 65px;
+    font-size: 15px;
+    top: 30px;
+  }
+  .eye {
+    padding: 16px;
+    display: block;
+  }
+  .hero-area {
+    height: auto;
+    padding-top: 34px;
+    padding-bottom: 50px;
+  }
+  .header-area {
+    padding-bottom: 10px;
+    padding-top: 8px;
+  }
+  .telephone {
+    font-size: 14px;
+  }
+  .hero-bottom-area {
+    flex-direction: column-reverse;
+    padding-top: 36px;
+    margin-bottom: 30px;
+  }
+  .section-title h2 {
+    font-size: 28px;
+  }
+  .section-title {
+    margin-bottom: 30px;
+  }
+  .case-g-wrapper,
+  .team-members-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .benefit-area {
+    padding-top: 30px;
+  }
+  .benefits-g-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .treatment-steps li {
+    font-size: 15px;
+  }
+  .treatment-steps li:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .hr-line {
+    margin-top: 40px;
+    margin-bottom: 34px;
+  }
+  .contact-area {
+    padding: 45px 0;
+  }
+  .contact-form {
+    padding: 24px 16px;
+  }
+  .testimonial-area {
+    padding: 40px 0;
+  }
+  .team-area {
+    padding-top: 35px;
+    padding-bottom: 45px;
+  }
+  .footer-g-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .testimonial-area .layer,
+  .layer.two {
+    display: none;
+  }
+  .testimonial-carousel {
+    display: block;
+  }
+  .footer-area {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+}
