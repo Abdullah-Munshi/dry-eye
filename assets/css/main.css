@@ -241,9 +241,6 @@ h5 {
 /* case-area css end */
 
 /* about-treatment-area css start */
-.about-treatment-area {
-  padding-bottom: 70px;
-}
 .treatment-steps li {
   font-size: 18px;
   line-height: 1.6;
@@ -261,6 +258,9 @@ h5 {
 /* about-treatment-area css end */
 
 /* contact-area css start */
+.contact-area {
+  padding: 70px 0;
+}
 .contact-g-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -371,8 +371,75 @@ input[type="checkbox"]:before {
 /* contact-area css end */
 
 /* testimonial-area css start */
-.testimonial-section {
-  padding-top: 55px;
+.testimonial-area {
+  padding: 70px 0;
+  background: var(--primary);
+}
+.testimonial-item {
+  padding: 30px;
+  border-radius: 3px;
+  background: #ffffff2e;
+  max-width: 450px;
+  margin: 0 auto;
+  border: 1px solid #ffffff2e;
+}
+.testimonial-outer-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.testimonial-left {
+  width: 40%;
+  flex: 0 0 40%;
+  padding-right: 50px;
+}
+.testimonial-right {
+  width: 60%;
+  flex: 0 0 60%;
+}
+
+.reviwer-thumb img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.reviwer {
+  display: grid;
+  grid-template-columns: 60px auto;
+  align-items: center;
+  gap: 20px;
+}
+.reviwer h5 {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.reviwer h5 span {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-top: 6px;
+}
+.testimonial-item p {
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 22px;
+}
+
+.section-title.white h2 {
+  color: #fff;
+}
+.testimonial-left .section-title h2 {
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+.testimonial-left p {
+  color: #fff;
+}
+.testimonial-carousel {
+  display: flex;
 }
 /* testimonial-area css end */
 
