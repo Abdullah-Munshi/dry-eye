@@ -871,17 +871,6 @@ img-comparison-slider.rendered [slot="second"] {
     padding-bottom: 40px;
   }
   .hero-area .layer.one {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .hero-area .layer.one {
-    width: 480px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .hero-area .layer.one {
-    width: 375px;
+    display: none;
   }
 }
