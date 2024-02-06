@@ -869,4 +869,7 @@ img-comparison-slider.rendered [slot="second"] {
     padding-top: 50px;
     padding-bottom: 40px;
   }
+  .hero-area .layer.one {
+    width: 100%;
+  }
 }
