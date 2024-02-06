@@ -32,6 +32,81 @@ h5 {
   font-family: "Cormorant Garamond", serif;
 }
 
+/* utility css start */
+.container {
+  max-width: 1200px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.w-full {
+  width: 100%;
+}
+
+/* // Block Classes */
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
+.text-center {
+  text-align: center;
+}
+
+/* // Flex Classes */
+.flex {
+  display: flex;
+}
+.inline-flex {
+  display: inline-flex;
+}
+.items-center {
+  align-items: center;
+}
+.items-start {
+  align-items: flex-start;
+}
+.items-end {
+  align-items: flex-end;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+/* // Positions Classes */
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+
+/* // Z-Idex Classes */
+.z-1 {
+  z-index: 1;
+}
+
+/* Height Classes  */
+.h-full {
+  height: 100%;
+}
+
+/* // Decoration Classes */
+.text-decoration-none {
+  text-decoration: none;
+}
+
+/* utility css end */
+
 /* text animation css start */
 .discount-price {
   display: inline-block;
@@ -591,6 +666,23 @@ input[type="checkbox"]:before {
   z-index: 5;
 }
 /* footer-area css end */
+/* img-comparison slider css start  */
+img-comparison-slider {
+  visibility: hidden;
+}
+
+img-comparison-slider [slot="second"] {
+  display: none;
+}
+
+img-comparison-slider.rendered {
+  visibility: inherit;
+}
+
+img-comparison-slider.rendered [slot="second"] {
+  display: unset;
+}
+/* img-comparison slider css end */
 
 @media screen and (max-width: 1439px) {
   .back-to-top {
